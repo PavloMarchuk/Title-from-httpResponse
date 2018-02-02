@@ -1,0 +1,40 @@
+﻿@model WebUi.Models.ReturnedTextViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+
+	<h4>ReturnedTextViewModel</h4>
+	<hr />
+	<p>https://docs.microsoft.com/uk-ua/</p>
+	<p>https://www.ukr.net/</p>
+
+
+	<div class="row">
+		<div class="col-md-4">
+			<form asp-action="Create" method="post">
+				<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+				<div class="form-group">
+					<textarea asp-for="Result" class="form-control" cols="40" rows="5">  https://www.ukr.net/</textarea>
+				</div>
+				<div class="form-group">
+					<input type="submit" value="OK" class="btn btn-default" id="submit" />
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="row" id="search">
+	</div>	
+
+
+</body>
+</html>
