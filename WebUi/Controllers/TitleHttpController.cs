@@ -76,7 +76,7 @@ namespace WebUi.Controllers
 						{
 							using (StreamReader reader = new StreamReader(stream))
 							{
-								//Console.WriteLine(reader.ReadToEnd());
+								//.Console.WriteLine(reader.ReadToEnd());
 
 								string source = reader.ReadToEnd();
 								requestStateVM.UrlTitle = Regex.Match(source, @"\<title\b[^>]*\>\s*(?<Title>[\s\S]*?)\</title\>", RegexOptions.IgnoreCase).Groups["Title"].Value;
