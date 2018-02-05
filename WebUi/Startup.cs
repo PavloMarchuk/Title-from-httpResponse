@@ -8,7 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace WebUi
-{
+{//
     public class Startup
     {
         public Startup(IConfiguration configuration)
